@@ -1,9 +1,24 @@
-Home: /
-
-works: /
-
-
-about: /
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 
-FrontEndGuide: /
+    
+    
+    
+    
+    
+  <url>
+    <loc>http://yoursite.com/2016/03/27/hello-world/</loc>
+    <lastmod>2016-03-27T10:34:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-03-27T10:34:26.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
