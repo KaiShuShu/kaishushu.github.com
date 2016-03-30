@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Guide | 凯叔叔的博客</title>
+  <title>Linux学习：登陆与在线求助man page | 凯叔叔的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="描述该写点什么呢？哎呀！想不出来啊，吹牛又不太好，算了，还是不写了！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Guide">
-<meta property="og:url" content="http://yoursite.com/Guide/index.html">
+  <meta name="description" content="Linux登陆与在线求助man page">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux学习：登陆与在线求助man page">
+<meta property="og:url" content="http://yoursite.com/2015/01/30/Linux学习：登陆与在线求助man page/index.html">
 <meta property="og:site_name" content="凯叔叔的博客">
-<meta property="og:description" content="描述该写点什么呢？哎呀！想不出来啊，吹牛又不太好，算了，还是不写了！">
-<meta property="og:updated_time" content="2016-03-27T15:26:13.000Z">
+<meta property="og:description" content="Linux登陆与在线求助man page">
+<meta property="og:updated_time" content="2016-03-30T15:49:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Guide">
-<meta name="twitter:description" content="描述该写点什么呢？哎呀！想不出来啊，吹牛又不太好，算了，还是不写了！">
+<meta name="twitter:title" content="Linux学习：登陆与在线求助man page">
+<meta name="twitter:description" content="Linux登陆与在线求助man page">
   
     <link rel="alternative" href="/atom.xml" title="凯叔叔的博客" type="application/atom+xml">
   
@@ -39,7 +39,7 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -239,11 +239,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Linux学习：登陆与在线求助man page" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/Guide/index.html" class="article-date">
-      <time datetime="2016-03-27T15:26:13.000Z" itemprop="datePublished">2016-03-27</time>
+      <a href="/2015/01/30/Linux学习：登陆与在线求助man page/" class="article-date">
+      <time datetime="2015-01-30T10:29:00.000Z" itemprop="datePublished">2015-01-30</time>
 </a>
     </div>
   
@@ -256,7 +256,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Guide
+      Linux学习：登陆与在线求助man page
     </h1>
   
 
@@ -264,8 +264,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -273,52 +281,106 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta {
-        display: none;
-    }
-    #container .article .article-title {
-        padding-right: 0;
-    }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover {
-        border-left: none;
-    }
-    .article-title {
-        font-size: 1.6em
-    }
-    .article-meta {
-        display: none;
-    }
-    .article-entry hr {
-        margin: 0;
-    }
-    #container .article-info-post.article-info {
-      display: none;
-      }
-    #container .article .article-title {
-    padding: 0;
-    }
-</style>
+        <h1 id="查看内核版本"><a href="#查看内核版本" class="headerlink" title="查看内核版本"></a>查看内核版本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -r</span><br></pre></td></tr></table></figure>
+<p>稳定版本的偶数版，如2.6.x，适合于商业与家用环境使用；开发中版本，如2.5.x，适合开发特殊功能的环境。</p>
+<h1 id="登陆"><a href="#登陆" class="headerlink" title="登陆"></a>登陆</h1><p>Mac：（若以root身份登陆，将username改为root）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh username@IPaddress</span><br></pre></td></tr></table></figure></p>
+<p>Linux：(若以root身份登陆，将username删掉）Linux默认root的提示符为#,而一般身份用户的提示符为$。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su - username</span><br></pre></td></tr></table></figure></p>
+<h1 id="注销Linux"><a href="#注销Linux" class="headerlink" title="注销Linux"></a>注销Linux</h1><p>注销Linux并不意味着关机，只是用户离开系统。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure></p>
+<h1 id="基础命令的操作"><a href="#基础命令的操作" class="headerlink" title="基础命令的操作"></a>基础命令的操作</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">command [-options] parameter1 parameter2 ···</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">echo $LANG   #显示目前支持的语言</span><br><span class="line">LANG=en_US   #将语言改为英文系</span><br><span class="line">date         #显示日期与实践</span><br><span class="line">cal 10 2014  #显示日历</span><br><span class="line">bc           #计算器</span><br><span class="line">quit         #退出</span><br></pre></td></tr></table></figure>
+<h1 id="重要的热键"><a href="#重要的热键" class="headerlink" title="重要的热键"></a>重要的热键</h1><p><code>[tab]</code>：连按两次，具有“命令补全”和“文件补齐”的作用。 <code>[control]+c</code>：中断目前程序。 <code>[control]+d</code>：键盘输入结束；直接离开文字界面（相当于<code>exit</code>）。</p>
+<h1 id="在线求助-man-page"><a href="#在线求助-man-page" class="headerlink" title="在线求助 man page"></a>在线求助 man page</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">man command  #command是要查询的命令名称</span><br></pre></td></tr></table></figure>
+<p>进入man命令后，可按空格往下翻页，按q键离开。 在man page中，可以在任何时候输入/keyword来查询关键字，比如/date.</p>
+<h1 id="正确的关机方法"><a href="#正确的关机方法" class="headerlink" title="正确的关机方法"></a>正确的关机方法</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">who         #查看目前有谁在线</span><br><span class="line">netstat -a  #查看网络的联机状态</span><br><span class="line">ps -aux     #查看后台执行的程序</span><br></pre></td></tr></table></figure>
+<p>数据同步写入磁盘：为了防止不正常关机导致的内存数据没有来得及写入磁盘，在文字界面输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sync</span><br></pre></td></tr></table></figure></p>
+<p>惯用的关机命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">shutdown -h now     #立刻关机</span><br><span class="line">shutdown -h 20:25   #晚上8点25分关机</span><br><span class="line">shutdown -h +10     #过十分钟后关机</span><br><span class="line">shutdown -r now     #立刻重启</span><br><span class="line">shutdown -r +30 ‘The system will be reboot’    #再过30分钟关机，并显示后面的消息给所有在线用户</span><br><span class="line">shutdown -k now ‘The system will be reboot’    #仅发出警告，系统并不会真正关机</span><br></pre></td></tr></table></figure></p>
+<p>重启、关机：reboot，halt，poweroff。务必用man去查询一下。</p>
 
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2015/01/30/Linux学习：登陆与在线求助man page/">Linux学习：登陆与在线求助man page</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 凯叔叔 的个人博客">凯叔叔</a></p>
+        <p><span>发布时间:</span>2015年01月30日 - 18时29分</p>
+        <p><span>最后更新:</span>2016年03月30日 - 23时49分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2015/01/30/Linux学习：登陆与在线求助man page/" title="Linux学习：登陆与在线求助man page">http://yoursite.com/2015/01/30/Linux学习：登陆与在线求助man page/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/01/30/Linux学习：登陆与在线求助man page/　　作者: 凯叔叔" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+<nav id="article-nav">
+  
+    <a href="/2015/01/30/Linux学习：文件权限与目录配置/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Linux学习：文件权限与目录配置
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#查看内核版本"><span class="toc-number">1.</span> <span class="toc-text">查看内核版本</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#登陆"><span class="toc-number">2.</span> <span class="toc-text">登陆</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#注销Linux"><span class="toc-number">3.</span> <span class="toc-text">注销Linux</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#基础命令的操作"><span class="toc-number">4.</span> <span class="toc-text">基础命令的操作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重要的热键"><span class="toc-number">5.</span> <span class="toc-text">重要的热键</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在线求助-man-page"><span class="toc-number">6.</span> <span class="toc-text">在线求助 man page</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#正确的关机方法"><span class="toc-number">7.</span> <span class="toc-text">正确的关机方法</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
 
 
 
@@ -339,7 +401,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="page-undefined" data-title="Guide" data-url="http://yoursite.com/Guide/index.html"></div>
+    <div class="ds-thread" data-thread-key="post-Linux学习：登陆与在线求助man page" data-title="Linux学习：登陆与在线求助man page" data-url="http://yoursite.com/2015/01/30/Linux学习：登陆与在线求助man page/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -360,6 +422,39 @@ var duoshuoQuery = {short_name:"zmosa"};
     
 
 
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2015/01/30/Linux学习：文件权限与目录配置/" title="上一篇: Linux学习：文件权限与目录配置">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/27/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/07/C语言关键字的特性/">C语言关键字的特性</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/07/Linux学习：磁盘与文件系统管理/">Linux学习：磁盘与文件系统管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/01/30/Git常用命令速查表/">Git常用命令速查表</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/01/30/Linux学习：文件与目录管理/">Linux学习：文件与目录管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/01/30/Linux学习：文件权限与目录配置/">Linux学习：文件权限与目录配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/01/30/Linux学习：登陆与在线求助man page/">Linux学习：登陆与在线求助man page</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
 
 
 
